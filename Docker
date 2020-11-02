@@ -1,0 +1,4 @@
+FROM mcr.microsoft.com/windows/servercore:ltsc2019
+ADD http://download.uipath.com/uipathstudio.msi c:\\UiPathStudio.msi
+RUN C:\\UIPathStudio.msi ADDLOCAL-Desktopfeature.Robot APPLICATIONFOLDER_C:\\UiPath
+CMD["cmd"]
